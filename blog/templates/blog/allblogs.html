@@ -43,7 +43,7 @@
             <hr/>
 
             {% for blog in blogs.all %}
-                <h3><a href="">{{ blog.title }}</a></h3>
+                <h3><a href="{% url 'blogdetail' blog.id %}">{{ blog.title }}</a></h3>
                 {{ blog.pub_date_pretty }}
                     <br />
                 <img class="img-fluid" src="{{ blog.image.url }}" height="200" width="200"/>
