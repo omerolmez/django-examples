@@ -1,12 +1,13 @@
 
 <!doctype html>
 <html lang="en">
+
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
 
     <title>Album example for Bootstrap</title>
 
@@ -26,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                   <a class="nav-item nav-link active" href="#">Twitter</a>
-                  <a class="nav-item nav-link" href="#">Resume</a>
+                  <a class="nav-item nav-link" href="{% static 'tesla-cat.jpg' %}">Resume</a>
                   <a class="nav-item nav-link" href="#">Blog</a>
                 </div>
             </div>
